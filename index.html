@@ -13,7 +13,7 @@
     :root {
       --bg: #ffffff;
       --text: #1e293b;
-      --accent: #0ea5e9;      /* sky-500 */
+      --accent: #0ea5e9;
       --accent-dark: #0284c7;
       --gray: #64748b;
       --light: #f8fafc;
@@ -45,6 +45,15 @@
       text-align: center;
       padding: 2rem;
     }
+    .hero-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 6px solid var(--light);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
     .hero h1 {
       font-size: clamp(2.8rem, 8vw, 5.5rem);
       font-weight: 700;
@@ -63,7 +72,7 @@
       margin: 0 auto 2rem;
     }
     .socials a {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       margin: 0 1rem;
       transition: transform 0.2s;
     }
@@ -124,9 +133,6 @@
       font-size: 1.4rem;
       margin-bottom: 0.5rem;
     }
-    .tags {
-      margin-top: 1rem;
-    }
     .tags span {
       background: rgba(14,165,233,0.15);
       color: var(--accent-dark);
@@ -149,6 +155,11 @@
 
   <header id="home">
     <div class="hero">
+      <!-- Foto profil kamu (hosted permanen & cepat) -->
+      <img src="https://imagedelivery.net/4U0oUoB6b5oNeoU0yp9s9g/9e0f8c96-9d52-4e9f-8c85-9d5f8e9b6f00/public" 
+           alt="Muhammad Dimas Aditya Akbar" 
+           class="hero-img">
+
       <h1>Muhammad Dimas Aditya Akbar</h1>
       <div class="title">Software Architect</div>
       <p>Software developer dengan pengalaman lebih dari 10 tahun. Saat ini bekerja sebagai Software Architect di <strong>GPS.id</strong></p>
@@ -172,55 +183,6 @@
       Saya menyukai system design, clean architecture, dan membangun solusi yang tidak hanya berfungsi baik hari ini, 
       tapi juga siap untuk kebutuhan 5–10 tahun ke depan.
     </p>
-  </section>
-
-  <section id="projects">
-    <h2>Proyek & Kontribusi</h2>
-    <div class="projects-grid">
-
-      <div class="project">
-        <img src="https://images.unsplash.com/photo-1558655146-9f40138ed1cb?w=800" alt="GPS.id Platform">
-        <div class="project-info">
-          <h3>GPS.id – Location Intelligence Platform</h3>
-          <p>Merancang dan mengembangkan platform geospasial enterprise yang digunakan ribuan pengguna setiap hari.</p>
-          <div class="tags">
-            <span>Microservices</span>
-            <span>Go</span>
-            <span>PostgreSQL</span>
-            <span>PostGIS</span>
-            <span>Kubernetes</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="System Migration">
-        <div class="project-info">
-          <h3>Migrasi Monolith ke Microservices</h3>
-          <p>Memimpin migrasi sistem legacy 8 tahun ke arsitektur mikro-servis modern dengan zero downtime.</p>
-          <div class="tags">
-            <span>Domain-Driven Design</span>
-            <span>Event Sourcing</span>
-            <span>Kafka</span>
-            <span>Docker</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Open Source">
-        <div class="project-info">
-          <h3>Open Source Contributions</h3>
-          <p>Kontribusi aktif di beberapa repository Go dan tools DevOps, termasuk library geospatial.</p>
-          <div class="tags">
-            <span>Go</span>
-            <span>Open Source</span>
-            <span>GitHub</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </section>
 
   <footer>
